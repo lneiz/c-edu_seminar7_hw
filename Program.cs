@@ -88,11 +88,11 @@ void GetValue(int[,] array)
     {
         if(col <= array.GetLength(1))
         {
-            Console.Write("Значение запрашиваемого элемента массива: " + array[row - 1,col - 1]);
+            Console.Write(row + " " + col + " -> " + array[row - 1,col - 1]);
         }
-        else Console.Write("Элемента с таким индексом не существует в этом массиве - 1");
+        else Console.Write(row + " " + col + " -> " + "Элемента с таким индексом не существует в этом массиве");
     }
-    else Console.Write("Элемента с таким индексом не существует в этом массиве - 2");
+    else Console.Write(row + " " + col + " -> " + "Элемента с таким индексом не существует в этом массиве");
 }
 
 int[,] array = CreateRandom2dArray();
